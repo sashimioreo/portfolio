@@ -277,3 +277,59 @@ footer{padding-block:40px calc(40px + env(safe-area-inset-bottom,0px));border-to
   .mcta .btn{width:100%}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* ---------- motion ----------
+   Hero plays in on load. Everything else rises in once as it scrolls into view.
+   All of it is skipped for people who ask for reduced motion, and nothing is hidden without JavaScript. */
+:root{--ease:cubic-bezier(.2,.7,.2,1)}
+.bar-fill{width:var(--w,100%)}
+
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes unveil{from{clip-path:inset(12% 10% 0 10% round 20px);transform:scale(1.08)}to{clip-path:inset(0 0 0 0 round 20px);transform:none}}
+@keyframes underline{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes cardIn{from{opacity:0;transform:translateY(16px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+.js .rise{opacity:0;animation:rise .9s var(--ease) var(--d,0ms) forwards}
+.js .hero .photo img{animation:unveil 1.3s var(--ease) .15s both}
+.js .hero h1 .hl::after{transform-origin:left;transform:scaleX(0);animation:underline .8s var(--ease) .9s forwards}
+.js .photo-card{opacity:0;animation:cardIn .7s var(--ease) 1s forwards,float 6s ease-in-out 1.8s infinite}
+
+/* scroll reveals */
+.js .sec-head,.js .goal,.js .goals-foot,.js .about-img,.js .about-body > *,.js .service,.js .free,.js .more-link,
+.js .step,.js .steps-cta,.js .faq details,.js .contact > div > *,.js .contact-img,.js .case,.js .sly-card,.js .cta-band{
+  opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0ms)}
+.js .about-img,.js .contact-img{transform:translateY(28px) scale(.97)}
+.js .in.in{opacity:1;transform:none}
+
+/* bars grow, numbers count up (examples page) */
+.js .bar-fill{width:0;transition:width 1.4s var(--ease) .25s}
+.js .case.in .bar-fill{width:var(--w,100%)}
+.js .case.in .bar.main .bar-fill{transition-delay:.55s}
+
+/* hover life */
+.goal svg,.service .ic,.principle svg{transition:transform .35s var(--ease)}
+.goal:hover svg{transform:translateY(-3px) rotate(-6deg)}
+.service{transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s}
+.service:hover,.js .service.in:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(20,19,17,.08);border-color:#cfc3ad}
+.service:hover .ic{transform:rotate(-8deg) scale(1.06)}
+.step,.sly-card,.principle{transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.step:hover,.sly-card:hover,.principle:hover,.js .step.in:hover,.js .sly-card.in:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(20,19,17,.08)}
+.about-img,.contact-img{transition:transform .6s var(--ease)}
+
+/* ticker */
+.ticker{background:var(--sand);border-block:1px solid var(--line);overflow:hidden;padding-block:16px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.ticker-track{display:flex;width:max-content;animation:ticker 38s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker-row{display:flex;align-items:center;gap:28px;padding-right:28px}
+.ticker span{font-size:15px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;color:var(--ink-2)}
+.ticker svg{width:14px;height:14px;color:var(--amber)}
+
+@media (prefers-reduced-motion:reduce){
+  .js .rise,.js .hero .photo img,.js .photo-card,.js .hero h1 .hl::after{animation:none;opacity:1;transform:none;clip-path:none}
+  .js .sec-head,.js .goal,.js .goals-foot,.js .about-img,.js .about-body > *,.js .service,.js .free,.js .more-link,
+  .js .step,.js .steps-cta,.js .faq details,.js .contact > div > *,.js .contact-img,.js .case,.js .sly-card,.js .cta-band{opacity:1;transform:none}
+  .js .bar-fill{width:var(--w,100%)}
+  .ticker-track{animation:none}
+}
