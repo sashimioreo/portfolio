@@ -9,301 +9,199 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Kane Tan · Financial Consultant">
 <meta property="og:description" content="Chart out your goals and plan for the big ticket items in Singapore. Coffee's on me.">
-<meta property="og:image" content="https://kanes-portfolio.vercel.app/og.jpg">
+<meta property="og:image" content="https://kanes-portfolio.vercel.app/assets/img/og.jpg">
 <meta property="og:url" content="https://kanes-portfolio.vercel.app/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+<link rel="preload" href="/assets/fonts/poppins-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/poppins-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
 <header class="nav" id="nav">
   <div class="wrap nav-in">
-    <a class="brand" href="#top">Kane Tan <span>· Financial Consultant</span></a>
-    <nav class="nav-links" aria-label="Sections">
-      <a href="#story">About</a>
+    <a class="brand" href="/" aria-label="Kane Tan, home"><span class="brand-mark">KT</span>Kane Tan</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#about">About</a>
       <a href="#help">How I help</a>
-      <a href="#examples">Examples</a>
+      <a href="/examples">Examples</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="btn btn-dark js-wa" href="https://wa.me/6589033973" target="_blank" rel="noopener">Book a coffee</a>
+    <div class="nav-right">
+      <div class="socials">
+        <a class="icon-btn" href="https://www.instagram.com/kane.tzx/" target="_blank" rel="noopener" aria-label="Instagram @kane.tzx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/kanetanzx123" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 10h4v11H3zM9.5 10h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-4.8c0-1.15-.02-2.62-1.6-2.62-1.6 0-1.85 1.25-1.85 2.54V21H9.5z"/></svg></a>
+      </div>
+      <a class="btn btn-dark btn-sm js-wa" href="https://wa.me/6589033973" target="_blank" rel="noopener">Book a coffee</a>
+    </div>
   </div>
 </header>
 
-<main id="top">
+<main>
 
   <!-- HERO -->
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <p class="eyebrow">Hi, I'm Kane</p>
-        <h1>Chart out your goals. Get there with <em>a plan.</em></h1>
-        <p class="lede">I help young adults in Singapore plan for the big ticket items, like a car, a home and a wedding, and help families plan for retirement. Clear numbers, plain English, and you decide.</p>
+        <p class="label amber">Financial Consultant · Great Eastern</p>
+        <h1>Chart out your goals. Get there with <span class="hl">a plan.</span></h1>
+        <p class="lede">I help young adults in Singapore plan for the big ticket items, like a car, a home and a wedding. Clear numbers, plain English, and you decide.</p>
         <div class="cta-row">
           <a class="btn btn-dark js-wa" href="https://wa.me/6589033973" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
             Grab a coffee with me
           </a>
-          <a class="btn btn-line" href="#help">See how I help</a>
+          <a class="btn btn-line" href="#help">How I help <span class="arrow" aria-hidden="true">→</span></a>
         </div>
-        <p class="hero-note">30 minutes, casual, and the coffee's on me.</p>
+        <ul class="trust" aria-label="About the coffee chat">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Coffee's on me</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>30 minutes, casual</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>No obligation</li>
+        </ul>
       </div>
-      <div class="portrait">
-        <img src="/kane-portrait.jpg" width="1000" height="1319" alt="Kane Tan, smiling, in a black shirt" fetchpriority="high">
-        <div class="tag"><b>Kane Tan</b>Financial Consultant, Great Eastern</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHO -->
-  <section class="band" aria-labelledby="who-h">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Who I work with</p>
-        <h2 id="who-h">Most people I meet are at one of these points.</h2>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <p class="k">Just started working</p>
-          <h3>You want to start right</h3>
-          <p>You've started earning and don't want your pay to just sit in the bank. You want a plan before habits set in.</p>
-        </article>
-        <article class="card">
-          <p class="k">Big milestones ahead</p>
-          <h3>Car, home, wedding</h3>
-          <p>Sometimes all at once. You want to know they're possible, and what it takes to get there without stress.</p>
-        </article>
-        <article class="card">
-          <p class="k">Retirement in sight</p>
-          <h3>A clear number</h3>
-          <p>You're in your 50s and want to know how much is enough, and how to turn what you have into income that lasts.</p>
-        </article>
+      <div class="photo">
+        <img src="/assets/img/kane-sunset.jpg" width="1000" height="1249" alt="Kane Tan by the sea at sunset" fetchpriority="high">
+        <div class="photo-card"><span class="dot" aria-hidden="true"></span><div><b>Kane Tan</b><span>Taking new coffee chats</span></div></div>
       </div>
     </div>
   </section>
 
   <!-- GOALS -->
-  <section class="dark" aria-labelledby="goals-h">
+  <section class="dark sec" aria-labelledby="goals-h">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">The big ticket items</p>
-        <h2 id="goals-h">They only get more expensive. Planning early puts you ahead.</h2>
+        <p class="label">The big ticket items</p>
+        <h2 class="h2" id="goals-h">They only get more expensive. Planning early puts you ahead.</h2>
       </div>
       <div class="goals">
-        <div class="goal"><span class="g">Car</span><span class="s">Your first set of wheels</span></div>
-        <div class="goal"><span class="g">Home</span><span class="s">BTO or resale</span></div>
-        <div class="goal"><span class="g">Wedding</span><span class="s">The big day, and after</span></div>
-        <div class="goal"><span class="g">Retirement</span><span class="s">Income that lasts</span></div>
+        <div class="goal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 16v-3l2-5a2 2 0 0 1 1.9-1.3h10.2A2 2 0 0 1 19 8l2 5v3"/><path d="M3 13h18M3 16h18v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2M7 16v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2"/><circle cx="7" cy="13" r=".6" fill="currentColor"/><circle cx="17" cy="13" r=".6" fill="currentColor"/></svg>
+          <div><h3>Car</h3><p>Your first set of wheels</p></div>
+        </div>
+        <div class="goal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9.5 21v-6h5v6"/></svg>
+          <div><h3>Home</h3><p>BTO or resale</p></div>
+        </div>
+        <div class="goal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="15" r="5.5"/><circle cx="15" cy="15" r="5.5"/><path d="m10.5 4.5 1.5-2 1.5 2-1.5 2z"/></svg>
+          <div><h3>Wedding</h3><p>The big day, and after</p></div>
+        </div>
+        <div class="goal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 19h20M5.5 19a6.5 6.5 0 0 1 13 0M12 6.5V9M4.6 10.6l1.8 1.8M19.4 10.6l-1.8 1.8M2 15h2M20 15h2"/></svg>
+          <div><h3>Retirement</h3><p>Income that lasts</p></div>
+        </div>
       </div>
-      <div class="goals-note">
-        <p>These goals can feel unrealistic or hard to reach. With proper planning, they're very possible. That's where I come in, to give you clarity on how to get there.</p>
-        <a class="btn btn-line js-wa" href="https://wa.me/6589033973" target="_blank" rel="noopener">Start with a coffee</a>
+      <div class="goals-foot">
+        <p>These goals can feel out of reach. With proper planning, they're <em>very possible</em>. That's where I come in, to give you clarity on how to get there.</p>
+        <a class="btn btn-light js-wa" href="https://wa.me/6589033973" target="_blank" rel="noopener">Start with a coffee <span class="arrow" aria-hidden="true">→</span></a>
       </div>
-      <p class="muted" style="margin-top:18px;font-size:15px">No big plans yet? That's fine. The best time to start is while you have no commitments and no pressure.</p>
     </div>
   </section>
 
-  <!-- STORY -->
-  <section id="story" aria-labelledby="story-h">
-    <div class="wrap story">
-      <img src="/kane-working.jpg" width="900" height="1344" alt="Kane working on a laptop at a café table" loading="lazy">
-      <div class="story-body">
-        <p class="eyebrow">My story</p>
-        <h2 id="story-h">I come from a tech background, and I use it here.</h2>
+  <!-- ABOUT -->
+  <section id="about" class="sec" aria-labelledby="about-h">
+    <div class="wrap about">
+      <img class="about-img" src="/assets/img/kane-working.jpg" width="900" height="1125" alt="Kane working on his laptop" loading="lazy">
+      <div class="about-body">
+        <p class="label">About me</p>
+        <h2 class="h2" id="about-h">I come from a tech background, and I use it here.</h2>
         <p>I studied engineering in polytechnic, and I'm now studying AI at NUS while building my advisory practice.</p>
-        <p>I like numbers and I like knowing why something works, not just being told that it works. That's what brought me here. Most people get sold a product. Very few get shown the numbers behind it.</p>
-        <p>So that's how I work. I show you the maths, I explain it in plain English, and you decide.</p>
+        <p>Most people get sold a product. Very few get shown the numbers behind it. <strong>So I show you the maths, I explain it in plain English, and you decide.</strong></p>
         <div class="principles">
           <div class="principle">
-            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
-            <div><h3>Plain English</h3><p>If I can't explain it simply, I don't understand it well enough.</p></div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <h3>Plain English</h3><p>If I can't explain it simply, I don't understand it well enough.</p>
           </div>
           <div class="principle">
-            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></svg></span>
-            <div><h3>Numbers first</h3><p>Every plan I show you comes with a projection you can check yourself.</p></div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg>
+            <h3>Numbers first</h3><p>Every plan comes with a projection you can check yourself.</p>
           </div>
           <div class="principle">
-            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-            <div><h3>Here for the long run</h3><p>I'm young. I plan to still be your adviser in twenty years.</p></div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <h3>Here for the long run</h3><p>I'm young. I plan to still be your adviser in twenty years.</p>
           </div>
         </div>
-        <div class="creds" aria-label="Background">
-          <span class="cred">Financial Consultant, Great Eastern</span>
-          <span class="cred">Team under the Great Eastern Private tier</span>
-          <span class="cred">AI, NUS School of Computing</span>
-          <span class="cred">Engineering diploma</span>
+        <div class="chips" aria-label="Background">
+          <span class="chip">Great Eastern Private tier team</span>
+          <span class="chip">AI, NUS School of Computing</span>
+          <span class="chip">Engineering diploma</span>
         </div>
-        <p class="muted" style="font-size:15px">I'm guided by a team that has been doing this far longer than I have, so you get the same planning process the team uses for its bigger clients.</p>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section id="help" class="band" aria-labelledby="help-h">
+  <!-- WHAT I DO + HOW I HELP -->
+  <section id="help" class="band sec" aria-labelledby="help-h">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">What I do</p>
-        <h2 id="help-h">Four things, usually looked at together.</h2>
+        <p class="label">What I do</p>
+        <h2 class="h2" id="help-h">One plan that covers the whole picture.</h2>
+        <p class="lede">Most people come to me for one of these. We usually end up looking at all four.</p>
       </div>
-      <div class="svc">
-        <div class="svc-item"><span class="n">01</span><div><h3>Goal and investment planning</h3><p>Structured plans that build towards your goals over the mid to long term, without you needing to watch the market every day.</p></div></div>
-        <div class="svc-item"><span class="n">02</span><div><h3>Insurance and protection</h3><p>Covering your income, health and family first, so one bad year doesn't undo everything you've built.</p></div></div>
-        <div class="svc-item"><span class="n">03</span><div><h3>Retirement income planning</h3><p>Working out how much you need, then turning what you have into income that lasts through retirement.</p></div></div>
-        <div class="svc-item"><span class="n">04</span><div><h3>Portfolio and policy review</h3><p>A full check of what you already hold, to find gaps, overlaps and money that's being wasted.</p></div></div>
+      <div class="services">
+        <article class="service">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg></span>
+          <div><h3>Goal and investment planning</h3><p>Structured plans that build towards your goals, without you needing to watch the market every day.</p></div>
+        </article>
+        <article class="service">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <div><h3>Insurance and protection</h3><p>Covering your income, health and family first, so one bad year doesn't undo everything you've built.</p></div>
+        </article>
+        <article class="service">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 19h20M5.5 19a6.5 6.5 0 0 1 13 0M12 6.5V9M4.6 10.6l1.8 1.8M19.4 10.6l-1.8 1.8"/></svg></span>
+          <div><h3>Retirement income planning</h3><p>Working out how much you need, then turning what you have into income that lasts.</p></div>
+        </article>
+        <article class="service">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M8 11l2 2 4-4"/></svg></span>
+          <div><h3>Policy and portfolio review</h3><p>A full check of what you already hold, to find gaps, overlaps and money that's being wasted.</p></div>
+        </article>
       </div>
-      <p class="svc-foot">Most people come to me for one of these. We usually end up looking at all four.</p>
-    </div>
-  </section>
 
-  <!-- FREE HELP -->
-  <section aria-labelledby="free-h">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Even if you never buy from me</p>
-        <h2 id="free-h">Here's what I can help with.</h2>
-      </div>
       <div class="free">
-        <article class="card">
-          <h3>A second opinion</h3>
-          <p>I'll go through your current policies and tell you honestly if they still fit you. If your plan is already good, I'll say so.</p>
-        </article>
-        <article class="card">
-          <h3>Help with claims</h3>
-          <p>If you need to claim, I'll walk you through it. That includes policies you didn't buy from me.</p>
-        </article>
-        <article class="card">
-          <h3>Your go-to person</h3>
-          <p>Questions on insurance, CPF, investments, or a letter you don't understand. Just ask. No appointment needed.</p>
-        </article>
-      </div>
-      <p class="free-note">None of this costs you anything, and none of it requires you to buy from me.</p>
-    </div>
-  </section>
-
-  <!-- SOUND LIKE YOU -->
-  <section class="band" aria-labelledby="sly-h">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Common situations</p>
-        <h2 id="sly-h">Does any of this sound like you?</h2>
-      </div>
-      <div class="sly">
-        <div class="card">
-          <h3>If you've just started working</h3>
-          <ul>
-            <li>Most of your pay just sits in the bank</li>
-            <li>You're not sure how much insurance you actually need</li>
-            <li>You want to invest but don't know where to start</li>
-            <li>You're still on policies your parents bought for you</li>
-            <li>You keep meaning to start and never get round to it</li>
-          </ul>
+        <div>
+          <h3>Even if you never buy from me</h3>
+          <p class="sub">None of this costs anything, and none of it requires you to buy from me.</p>
         </div>
-        <div class="card">
-          <h3>If retirement is on your mind</h3>
-          <ul>
-            <li>You want to retire but have no clear number in mind</li>
-            <li>You're not sure if your CPF will be enough</li>
-            <li>You hold many policies and can't recall what they cover</li>
-            <li>Your agent has left the industry and nobody took over</li>
-            <li>You want steady income later, not just one lump sum</li>
-          </ul>
-        </div>
+        <ul>
+          <li><b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>A second opinion</b><span>I'll tell you honestly if your policies still fit you. If they're good, I'll say so.</span></li>
+          <li><b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Help with claims</b><span>I'll walk you through it, even for policies you didn't buy from me.</span></li>
+          <li><b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Your go-to person</b><span>Questions on insurance, CPF or investments. Just ask, no appointment needed.</span></li>
+        </ul>
       </div>
-      <p class="sly-foot">There's usually at least one. That's normally where we start.</p>
+      <a class="more-link" href="/examples">See what planning can look like <span class="arrow" aria-hidden="true">→</span></a>
     </div>
   </section>
 
-  <!-- EXAMPLES -->
-  <section id="examples" aria-labelledby="ex-h">
+  <!-- HOW IT WORKS -->
+  <section class="sec" aria-labelledby="how-h">
     <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Examples</p>
-        <h2 id="ex-h">What planning can look like.</h2>
-        <p class="muted">Based on real client situations, with details changed to protect their privacy. The figures are illustrations, not promises. See the notes below each one.</p>
+      <div class="sec-head center">
+        <p class="label">How it works</p>
+        <h2 class="h2" id="how-h">It starts with a coffee.</h2>
       </div>
-      <div class="cases">
-
-        <article class="case">
-          <div>
-            <p class="eyebrow">Starting out</p>
-            <h3>23, first job, everything in the bank</h3>
-            <p class="who">Saving well, about $4,200 a year, but all of it sitting in a savings account.</p>
-            <div class="tbl">
-              <table>
-                <thead><tr><th>Same $4,200 a year, 15 years</th><th>Value at 38</th><th>Vs bank</th></tr></thead>
-                <tbody>
-                  <tr><td>Left in the bank at 1.5% p.a.</td><td>$71,116</td><td>–</td></tr>
-                  <tr><td>Illustrated at 4% p.a.</td><td>$87,463</td><td>+$16,347</td></tr>
-                  <tr><td>Illustrated at 8% p.a.</td><td class="hi">$123,162</td><td class="hi">+$52,046</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="takeaway">Same money, just moved out of the bank. She also picked up $250,000 of cover for $940.60 a year.</p>
-            <p class="case-note">Premiums depend on age, health and the plan chosen.</p>
-          </div>
-          <ol class="steps" aria-label="How we got there">
-            <li>Checked what her savings were actually earning in the bank</li>
-            <li>Kept $10,000 aside as her emergency fund first</li>
-            <li>Moved $4,200 a year into a structured plan and added protection</li>
-            <li>She started at 23, so time does most of the work</li>
-          </ol>
-        </article>
-
-        <article class="case">
-          <div>
-            <p class="eyebrow">Planning for retirement</p>
-            <h3>50, retiring at 60, money earning about 2%</h3>
-            <p class="who">Had $300,000 in his own investments, earning about 2% a year.</p>
-            <div class="tbl">
-              <table>
-                <thead><tr><th>Same $300,000, 10 years</th><th>Value at 60</th><th>Monthly income*</th></tr></thead>
-                <tbody>
-                  <tr><td>As it was, at 2% p.a.</td><td>$365,698</td><td>$1,524</td></tr>
-                  <tr><td>Illustrated at 4% p.a.</td><td>$444,073</td><td>$1,850</td></tr>
-                  <tr><td>Illustrated at 8% p.a.</td><td class="hi">$647,677</td><td class="hi">$2,699</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="takeaway">Same $300,000, restructured into a plan built for his retirement date.</p>
-            <p class="case-note">*Taking 5% of the value at 60 each year, paid monthly. Also not guaranteed.</p>
-          </div>
-          <ol class="steps" aria-label="How we got there">
-            <li>Worked out what his $300,000 was really earning him</li>
-            <li>Restructured it into a 10-year plan around his retirement date</li>
-            <li>Showed him the numbers year by year so he could check them himself</li>
-            <li>He could see where every dollar went before he said yes</li>
-          </ol>
-        </article>
-
-      </div>
-      <p class="case-note" style="margin-top:18px;max-width:80ch">How these figures are worked out: simple illustrations assuming contributions at the start of each year and returns compounded yearly, before fees and charges. The 4% and 8% p.a. rates are for illustration only. They are not guaranteed and are not the upper or lower limits of what you could get. Your actual projection comes from the product's own benefit illustration.</p>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section class="band" aria-labelledby="pr-h">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">What happens next</p>
-        <h2 id="pr-h">It starts with a coffee.</h2>
-      </div>
-      <ol class="process">
-        <li><h3>Drop me a message</h3><p>WhatsApp is easiest. Tell me a bit about where you're at and we'll pick a time and place that works for you.</p></li>
-        <li><h3>Coffee, my treat</h3><p>30 minutes, casual. Put a face to the name, and we chart out your goals together.</p></li>
-        <li><h3>Leave with a clear direction</h3><p>Even if nothing comes out of it, you leave with more clarity on your goals. Worst case, a free coffee and one more person in your network.</p></li>
+      <ol class="steps">
+        <li class="step"><h3>Drop me a message</h3><p>WhatsApp is easiest. We'll pick a time and a place near you.</p></li>
+        <li class="step"><h3>Coffee, my treat</h3><p>30 minutes, casual. Put a face to the name and chart out your goals together.</p></li>
+        <li class="step"><h3>Leave with clarity</h3><p>Even if nothing comes out of it, you leave with a clearer direction. Worst case, a free coffee and one more person in your network.</p></li>
       </ol>
+      <div class="steps-cta">
+        <a class="btn btn-dark js-wa" href="https://wa.me/6589033973" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+          Message me on WhatsApp
+        </a>
+        <span>Usually replies within the day</span>
+      </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" aria-labelledby="faq-h">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Questions</p>
-        <h2 id="faq-h">Before we meet.</h2>
+  <section id="faq" class="band sec" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <div class="sec-head" style="margin-bottom:0">
+        <p class="label">Questions</p>
+        <h2 class="h2" id="faq-h">Before we meet.</h2>
+        <p class="lede">Anything else, just ask me on WhatsApp.</p>
       </div>
       <div class="faq">
         <details>
@@ -320,31 +218,33 @@
         </details>
         <details>
           <summary>What should I bring?</summary>
-          <p>Nothing is needed. If you'd like a review, bring a list or photos of your current policies, or have your insurer's app open.</p>
+          <p>Nothing is needed. If you'd like a review, bring photos of your current policies or have your insurer's app open.</p>
         </details>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="dark" id="contact" aria-labelledby="c-h">
+  <section id="contact" class="dark sec" aria-labelledby="c-h">
     <div class="wrap contact">
       <div>
-        <p class="eyebrow">Let's connect</p>
+        <p class="label">Let's connect</p>
         <h2 id="c-h">A first conversation costs you nothing but half an hour.</h2>
-        <p class="lede">Message me on WhatsApp and we'll find a time.</p>
-        <a class="btn btn-line js-wa" href="https://wa.me/6589033973" target="_blank" rel="noopener">
+        <p class="lede">Message me and we'll find a time that works for you.</p>
+        <a class="btn btn-light js-wa" href="https://wa.me/6589033973" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
-          WhatsApp me
+          Grab a coffee with me
         </a>
-        <div class="links">
-          <a href="tel:+6589033973"><span>Phone</span><b>+65 8903 3973</b></a>
-          <a href="mailto:KaneTanZX@rep.greateasternfa.sg"><span>Email</span><b>KaneTanZX@rep.greateasternfa.sg</b></a>
-          <a href="https://www.instagram.com/kane.tzx/" target="_blank" rel="noopener"><span>Instagram</span><b>@kane.tzx</b></a>
-          <a href="https://www.linkedin.com/in/kanetanzx123" target="_blank" rel="noopener"><span>LinkedIn</span><b>linkedin.com/in/kanetanzx123</b></a>
+        <div class="contact-list">
+          <a href="tel:+6589033973"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>+65 8903 3973</span></a>
+          <a href="mailto:KaneTanZX@rep.greateasternfa.sg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span>KaneTanZX@rep.greateasternfa.sg</span></a>
+        </div>
+        <div class="socials">
+          <a class="icon-btn" href="https://www.instagram.com/kane.tzx/" target="_blank" rel="noopener" aria-label="Instagram @kane.tzx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/kanetanzx123" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 10h4v11H3zM9.5 10h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-4.8c0-1.15-.02-2.62-1.6-2.62-1.6 0-1.85 1.25-1.85 2.54V21H9.5z"/></svg></a>
         </div>
       </div>
-      <img src="/kane-seated.jpg" width="1000" height="1319" alt="Kane Tan seated on a stool" loading="lazy">
+      <img class="contact-img" src="/assets/img/kane-portrait.jpg" width="900" height="1125" alt="Kane Tan in a black shirt, smiling" loading="lazy">
     </div>
   </section>
 
@@ -352,38 +252,35 @@
 
 <footer>
   <div class="wrap">
-    <div class="foot-top">
-      <span>Kane Tan · Financial Consultant</span>
-      <span>© <span id="yr">2026</span> Kane Tan</span>
+    <div class="foot-row">
+      <span class="foot-brand">© <span class="js-yr">2026</span> Kane Tan</span>
+      <div class="socials">
+        <a class="icon-btn" href="https://www.instagram.com/kane.tzx/" target="_blank" rel="noopener" aria-label="Instagram @kane.tzx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/kanetanzx123" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 10h4v11H3zM9.5 10h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-4.8c0-1.15-.02-2.62-1.6-2.62-1.6 0-1.85 1.25-1.85 2.54V21H9.5z"/></svg></a>
+      </div>
     </div>
-    <div class="legal">
-      <h2>Important information</h2>
-      <p>This is the personal website of Kane Tan, a representative of Great Eastern Financial Advisers Private Limited. MAS Representative No.: TZX300918990. This is not an official website of Great Eastern or any of its related companies.</p>
-      <p>The information on this website is for general information only. It does not take into account the specific investment objectives, financial situation or particular needs of any person, and is not a recommendation to buy any product. Please seek advice from a qualified financial adviser representative before deciding to buy a product. If you choose not to seek advice, you should consider whether the product is suitable for you.</p>
-      <p>Buying a life insurance policy is a long-term commitment. An early termination of the policy usually involves high costs, and the surrender value payable, if any, may be less than the total premiums paid.</p>
-      <p>Investments are subject to investment risks, including the possible loss of the principal amount invested. Past performance is not necessarily indicative of future performance. The illustrated rates of return of 4% and 8% per annum used on this website are for illustration only, are not guaranteed, and do not represent the upper or lower limits of returns. Examples are based on real client situations with details changed for privacy. Actual outcomes will differ.</p>
-      <p>Policies are protected under the Policy Owners' Protection Scheme, which is administered by the Singapore Deposit Insurance Corporation (SDIC). Coverage for your policy is automatic and no further action is required from you. For more information on the types of benefits that are covered under the scheme as well as the limits of coverage, where applicable, please contact your insurer or visit the LIA or SDIC websites (<a href="https://www.lia.org.sg" target="_blank" rel="noopener">www.lia.org.sg</a> or <a href="https://www.sdic.org.sg" target="_blank" rel="noopener">www.sdic.org.sg</a>).</p>
-      <p>This advertisement has not been reviewed by the Monetary Authority of Singapore.</p>
-      <p>Any personal information you share with me by WhatsApp, phone or email is used only to respond to you and to provide financial advisory services, in line with the Personal Data Protection Act 2012.</p>
-    </div>
+    <p class="foot-meta">Kane Tan is a representative of Great Eastern Financial Advisers Private Limited. MAS Representative No. TZX300918990. This advertisement has not been reviewed by the Monetary Authority of Singapore.</p>
+    <details class="legal" id="important">
+      <summary>Important information</summary>
+      <div class="legal-body">
+        <p>This is the personal website of Kane Tan and is not an official website of Great Eastern or any of its related companies.</p>
+        <p>The information on this website is for general information only. It does not take into account the specific investment objectives, financial situation or particular needs of any person, and is not a recommendation to buy any product. Please seek advice from a qualified financial adviser representative before deciding to buy a product. If you choose not to seek advice, you should consider whether the product is suitable for you.</p>
+        <p>Buying a life insurance policy is a long-term commitment. An early termination of the policy usually involves high costs, and the surrender value payable, if any, may be less than the total premiums paid.</p>
+        <p>Investments are subject to investment risks, including the possible loss of the principal amount invested. Past performance is not necessarily indicative of future performance. Any illustrated rate of return on this website is for illustration only, is not guaranteed, and does not represent the upper or lower limit of returns. Examples are based on real client situations with details changed for privacy. Actual outcomes will differ.</p>
+        <p>Policies are protected under the Policy Owners' Protection Scheme, which is administered by the Singapore Deposit Insurance Corporation (SDIC). Coverage for your policy is automatic and no further action is required from you. For more information on the types of benefits that are covered under the scheme as well as the limits of coverage, where applicable, please contact your insurer or visit the LIA or SDIC websites (<a href="https://www.lia.org.sg" target="_blank" rel="noopener">www.lia.org.sg</a> or <a href="https://www.sdic.org.sg" target="_blank" rel="noopener">www.sdic.org.sg</a>).</p>
+        <p>Any personal information you share with me by WhatsApp, phone or email is used only to respond to you and to provide financial advisory services, in line with the Personal Data Protection Act 2012.</p>
+      </div>
+    </details>
   </div>
 </footer>
 
 <div class="mcta">
-  <a class="btn btn-dark js-wa" href="https://wa.me/6589033973" target="_blank" rel="noopener">Grab a coffee with me</a>
+  <a class="btn btn-dark js-wa" href="https://wa.me/6589033973" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+    Grab a coffee with me
+  </a>
 </div>
 
-<script>
-  // WhatsApp links open with a ready-made first message
-  var msg = "Hi Kane, I saw your page and would like to grab a coffee chat!";
-  document.querySelectorAll(".js-wa").forEach(function (a) {
-    a.href = "https://wa.me/6589033973?text=" + encodeURIComponent(msg);
-  });
-  // Nav border once scrolled
-  var nav = document.getElementById("nav");
-  function onScroll(){ nav.classList.toggle("scrolled", window.scrollY > 8); }
-  window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
-  document.getElementById("yr").textContent = new Date().getFullYear();
-</script>
+<script src="/site.js" defer></script>
 </body>
 </html>
